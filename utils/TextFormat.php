@@ -20,6 +20,11 @@ function create_text_formats(){
       'filter_html' => array(
         'weight' => 1,
         'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li><table> <p> <br>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 0
+        )
       ),
       // Line break filter.
       'filter_autop' => array(
@@ -56,7 +61,7 @@ function create_text_formats(){
         'weight' => 1,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <img> <table> <td> <th> <tr>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <img> <table> <td> <th> <tr> <p> <br>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0
         )
